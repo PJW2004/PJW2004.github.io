@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* header */
+header {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+/* main */
+main {
+    display: grid;
+    place-items: center;
+    padding: 40px;
+}
+
+section {
+    margin: 10px;
+}
+
+#AboutMe div img {
+    border-radius: 3em;
+}
+
+li {
+    margin: 10px;
+}
+
+/* other */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap div {
+    margin: 0 15px;
+}
