@@ -153,3 +153,24 @@ article p {
 footer {
     padding: 40px;
 }
+
+.batge {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.batge > .title {
+    min-width: 20px;
+    padding: 4px;
+    background-color: #a9a9a9;
+    text-align: center;
+}
+
+.batge > .context {
+    min-width: 20px;
+    padding: 4px;
+    background-color: #9cc0af;
+    text-align: center;
+}
