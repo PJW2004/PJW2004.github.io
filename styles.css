@@ -6,9 +6,10 @@
 
 /* 기본 스타일 */
 :root {
-    --background-shadow-color: #ffffffb4;
+    --background-shadow-color: #ffffffe1;
     --background-color: #ffffff;
     --text-color: #000000;
+    --background-dropdown-color: #e0e0e0;
 }
 
 body {
@@ -21,21 +22,26 @@ body {
 }
 
 .dark-mode {
-    --background-shadow-color: #292929b4;
+    --background-shadow-color: #292929e1;
     --background-color: #292929;
     --text-color: #ffffff;
+    --background-dropdown-color: #535353;
 }
 
 .toggle-button {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: #ddd;
+    background: #dddddd;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.toggle-button:hover {
+    background-color: #dddddde1;
 }
 
 a {
@@ -102,7 +108,7 @@ nav ul li {
 }
 
 .dropdown-content > a:hover {
-    background-color: #D6B6B8;
+    background-color: var(--background-dropdown-color);
 }
 
 .dropdown-content a {
