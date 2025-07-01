@@ -134,129 +134,77 @@
             </section>
 
             <section id="skills">
-                <div>
-                    <h2>SKILLS</h2>
-                    <br>
-                    <h3>Front End</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context" style="background-color: #FFD82B;">
-                                    JavaScript
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context" style="background-color: #4AF187;">
-                                    Vue JS
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>Back End</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context" style="background-color: #FF9354;">
-                                    Python
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>Infra</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context" style="background-color: #ADC8FF;">
-                                    Kubernetes
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context" style="background-color: #ADC8FF;">
-                                    Docker
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>DevOps</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    MySQL/MariaDB
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    PostGreSQL
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    Linux
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>Serverless</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    OCI (Oracle Cloud Infrastructure)
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>Collaboration</h3>
-                    <ul>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    Git
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    VSC (Visual Studio Code)
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="batge">
-                                <div class="title">-</div>
-                                <div class="context">
-                                    Notion/Opsidian
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <h2>SKILLS</h2>
+
+                <!-- 카테고리 탭 -->
+                <nav class="category-nav" id="skillNav">
+                    <button class="category-btn active" data-target="lang">언어</button>
+                    <button class="category-btn" data-target="frontend">프론트엔드</button>
+                    <button class="category-btn" data-target="backend">백엔드</button>
+                    <button class="category-btn" data-target="data">데이터</button>
+                    <button class="category-btn" data-target="db">데이터베이스</button>
+                    <button class="category-btn" data-target="devops">데브옵스</button>
+                    <button class="category-btn" data-target="collab">협업툴</button>
+                    <button class="category-btn" data-target="test">테스팅 툴</button>
+                </nav>
+
+                <!-- 언어 -->
+                <ul class="stack-list" id="lang">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/go"><span>Go (미숙)</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript (미숙)</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript (미숙)</span></li>
+                </ul>
+
+                <!-- 프론트엔드 -->
+                <ul class="stack-list hidden" id="frontend">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS (미숙)</span></li>
+                </ul>
+
+                <!-- 백엔드 -->
+                <ul class="stack-list hidden" id="backend">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
+                </ul>
+
+                <!-- 데이터 -->
+                <ul class="stack-list hidden" id="data">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kibana"><span>Kibana</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/apachekafka"><span>Kafka (미숙)</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/zookeeper"><span>Kookeeper (미숙)</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/pytorch"><span>PyTorch (미숙)</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB (미숙)</span></li>
+                </ul>
+
+                <!-- 데이터베이스 -->
+                <ul class="stack-list hidden" id="db">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/mysql"><span>MySQL</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/postgresql"><span>Postgres</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/redis"><span>Redis</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch (미숙)</span></li>
+                </ul>
+
+                <!-- 데브옵스 -->
+                <ul class="stack-list hidden" id="devops">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/gitlab"><span>GitLab</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
+                </ul>
+
+                <!-- 협업툴 -->
+                <ul class="stack-list hidden" id="collab">
+                    <li class="stack-item"><span>Flow</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/notion"><span>Notion</span></li>
+                </ul>
+
+                <!-- 테스팅 툴 -->
+                <ul class="stack-list hidden" id="test">
+                    <li class="stack-item"><span>SonarQube (미숙)</span></li>
+                </ul>
             </section>
 
             <section id="MyProfile">

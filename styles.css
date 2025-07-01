@@ -10,7 +10,54 @@
     --background-color: #ffffff;
     --text-color: #000000;
     --background-dropdown-color: #e0e0e0;
+
+    /* 20250701 추가 */
+    --gap:0.75rem;
+    --radius:0.65rem;
+    --shadow:0 2px 6px rgba(0,0,0,.05);--primary:#2563eb;
+    --text-main:#333;
 }
+.category-nav{
+    display:flex;
+    gap:.5rem;
+    overflow-x:auto;
+    margin:1.5rem 0;
+}
+.category-btn{
+    flex:0 0 auto;
+    padding:.5rem 1rem;
+    border:none;
+    background:#e2e8f0;
+    border-radius:9999px;
+    font-size:.875rem;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:background .2s;
+}
+.category-btn.active{
+    background:var(--primary);
+    color:var(--text-color);
+}
+.stack-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--gap);
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.stack-item{
+    display:flex;
+    align-items:center;
+    gap:.25rem;
+    padding:.4rem .6rem;
+    background:var(--background-color);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    font-size:.75rem;
+}
+.stack-item img{width:20px;height:20px;}
+.hidden{display:none;}
 
 body {
     font-family: Arial, sans-serif;
