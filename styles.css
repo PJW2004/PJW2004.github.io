@@ -1,277 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 1. 기본 타이포 & 컬러 ------------------------------------------------ */
+:root{
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-head:'EB Garamond',serif;
+  --text:#111;
+  --link:#0645ad;           /* 기본 파란 링크 */
+  --link-hover:#000;
+  --muted:#555;
+  --maxw:720px;
 }
 
-/* 기본 스타일 */
-:root {
-    --background-shadow-color: #ffffffe1;
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --background-dropdown-color: #e0e0e0;
+*{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:17px;line-height:1.65;}
+body{
+  font-family:var(--font-body);
+  color:var(--text);
+  background:#fff;
+  padding:0 1rem;
+}
 
-    /* 20250701 추가 */
-    --gap:0.75rem;
-    --radius:0.65rem;
-    --shadow:0 2px 6px rgba(0,0,0,.05);--primary:#2563eb;
-    --text-main:#333;
+/* 2. 레이아웃 ---------------------------------------------------------- */
+main{max-width:var(--maxw);margin:0 auto;padding:3.5rem 0;}
+header{text-align:left;margin-bottom:1rem;}
+
+h1{
+  font-family:var(--font-head);
+  font-size:2.4rem;
+  margin-bottom:.4rem;
 }
-.category-nav{
-    display:flex;
-    gap:.5rem;
-    overflow-x:auto;
-    margin:1.5rem 0;
+h1 .en{font-family:var(--font-body);font-weight:400;}
+
+h2{
+  font-family:var(--font-head);
+  font-size:1.5rem;
+  margin:2.5rem 0 .8rem;
 }
+p{
+  font-size:15px;
+}
+section{margin-bottom:10px;}
+
+/* 3. 링크 & 소셜 ------------------------------------------------------- */
+a{color:var(--link);text-decoration:none;}
+a:hover{color:var(--link-hover);}
+.social{display:flex;gap:1.1rem;font-size:0.95rem;margin-top:.5rem;}
+.social a:hover{text-decoration:underline;}
+
+/* 4. 카테고리 탭 (최소 디자인) ---------------------------------------- */
+.category-nav{display:flex;gap:.6rem;overflow-x:auto;margin:1.2rem 0;}
 .category-btn{
-    flex:0 0 auto;
-    padding:.5rem 1rem;
-    border:none;
-    background:#e2e8f0;
-    border-radius:9999px;
-    font-size:.875rem;
-    cursor:pointer;
-    white-space:nowrap;
-    transition:background .2s;
+  background:none;
+  border:1px solid #d0d0d0;
+  border-radius:999px;
+  padding:.30rem .4rem;
+  font-size:.8rem;
+  cursor:pointer;
+  transition:background .18s;
 }
-.category-btn.active{
-    background:var(--primary);
-    color:var(--text-color);
-}
+.category-btn.active,
+.category-btn:hover{background:#f0f0f0;}
+
+/* 5. 스택 리스트 ------------------------------------------------------- */
 .stack-list{
-    display:flex;
-    flex-wrap:wrap;
-    gap:var(--gap);
-    list-style:none;
-    padding:0;
-    margin:0;
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem 1rem;
+  margin-top:.5rem;
 }
-.stack-item{
-    display:flex;
-    align-items:center;
-    gap:.25rem;
-    padding:.4rem .6rem;
-    background:var(--background-color);
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    font-size:.75rem;
+.stack-list li{
+  display:flex;
+  align-items:center;
+  gap:.35rem;
+  font-size:.8rem;
+  color:var(--muted);
 }
-.stack-item img{width:20px;height:20px;}
+.stack-list img{width:20px;height:20px;}
 .hidden{display:none;}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    padding-top: 170px;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.dark-mode {
-    --background-shadow-color: #292929e1;
-    --background-color: #292929;
-    --text-color: #ffffff;
-    --background-dropdown-color: #535353;
-}
-
-.toggle-button {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background: #dddddd;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.toggle-button:hover {
-    background-color: #dddddde1;
-}
-
-a {
-    color: var(--text-color);
-}
-
-a:visited, a:focus, a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--background-shadow-color);
-    color: var(--text-color);
-    box-shadow: 0px 1px 10px -2px #00000033;
-
-    display: grid;
-    place-items: center;
-    padding: 30px;
-}
-
-header h1 {
-    font-size: 36px;
-    text-align: center;
-    color: var(--text-color);
-}
-
-nav ul {
-    width: 100%;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    /* padding: 16px; */
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #00000033;
-}
-
-.dropdown-content > a:hover {
-    background-color: var(--background-dropdown-color);
-}
-
-.dropdown-content a {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}   
-
-.dropdown-content {
-    display: none;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* main */
-main {
-    display: grid;
-    place-items: center;
-    padding: 40px;
-    justify-items: start;
-}
-
-section {
-    margin: 10px;
-}
-
-#AboutMe div img {
-    border-radius: 3em;
-}
-
-li {
-    margin: 10px;
-}
-
-/* other */
-.image img {
-    box-shadow: 0px 1px 10px 0px #000000;
-}
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.wrap {
-    display: flex;
-    flex-direction: row;
-}
-
-.wrap div {
-    margin: 0 15px;
-}
-
-.post {
-    margin: 10px;
-    padding: 20px;
-}
-
-.post:hover {
-    box-shadow: 0px 8px 16px 0px #00000033;
-}
-
-/* content */
-article {
-    padding: 20px 40px;
-}
-
-article h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-
-article h3 {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-article p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 3px;
-}
- 
-
-/* footer */
-footer {
-    padding: 40px;
-}
-
-.batge {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    color: #000000;
-}
-
-.batge > .title {
-    min-width: 20px;
-    padding: 4px;
-    background-color: #a9a9a9;
-    text-align: center;
-}
-
-.batge > .context {
-    min-width: 20px;
-    padding: 4px;
-    background-color: #9cc0af;
-    text-align: center;
-}
