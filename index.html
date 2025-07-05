@@ -11,219 +11,222 @@
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>박정원 <span class="en">(Jungwon Park)</span></h1>
-      <nav class="social">
-        <a href="https://github.com/PJW2004">GitHub</a>
-        <a href="https://www.linkedin.com/in/jungwon-park-36a11a269/">LinkedIn</a>
-        <a href="https://blog.naver.com/hamlet_blog">Blog</a>
-      </nav>
-    </header>
+    <main>
+        <header>
+        <h1>박정원 <span class="en">(Jungwon Park)</span></h1>
+        <nav class="social">
+            <a href="https://github.com/PJW2004">GitHub</a>
+            <a href="https://www.linkedin.com/in/jungwon-park-36a11a269/">LinkedIn</a>
+            <a href="https://blog.naver.com/hamlet_blog">Blog</a>
+        </nav>
+        </header>
 
-    <section id="intro">
-      <p>
-        인터페이스 및 데이터 워크플로우를 운영하며, 
-        <br/>
-        온프레미스와 클라우드 서버 멀티리전을 관리하고 있습니다.
-        <br/>
-        최근에는 MLOps 를 구축하고, LLM 적용을 시도하고 있습니다.
-      </p>
-    </section>
+        <section id="intro">
+            <p>
+                인터페이스 및 데이터 워크플로우를 운영하며, 
+                <br/>
+                온프레미스와 클라우드 서버 멀티리전을 관리하고 있습니다.
+                <br/>
+                최근에는 MLOps 를 구축하고, LLM 적용을 시도하고 있습니다.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>기술 역량</h3>
+
+            <!-- 카테고리 탭 -->
+            <nav class="category-nav" id="skillNav">
+                <button class="category-btn active" data-target="all">전체</button>
+                <button class="category-btn" data-target="lang">언어</button>
+                <button class="category-btn" data-target="frontend">프론트엔드</button>
+                <button class="category-btn" data-target="backend">백엔드</button>
+                <button class="category-btn" data-target="data">데이터</button>
+                <button class="category-btn" data-target="db">데이터베이스</button>
+                <button class="category-btn" data-target="devops">데브옵스</button>
+                <button class="category-btn" data-target="serverless">서버리스</button>
+                <button class="category-btn" data-target="collab">협업툴</button>
+                <button class="category-btn" data-target="test">테스팅 툴</button>
+            </nav>
+
+            <!-- 언어 -->
+            <ul class="stack-list" id="lang">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/go"><span>Go</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript</span></li>
+            </ul>
+
+            <!-- 프론트엔드 -->
+            <ul class="stack-list hidden" id="frontend">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS</span></li>
+            </ul>
+
+            <!-- 백엔드 -->
+            <ul class="stack-list hidden" id="backend">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
+            </ul>
+
+            <!-- 데이터 -->
+            <ul class="stack-list hidden" id="data">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/kibana"><span>Kibana</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/apachekafka"><span>Kafka</span></li>
+                <li class="stack-item"><span>Zookeeper</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/pytorch"><span>PyTorch</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB</span></li>
+            </ul>
+
+            <!-- 데이터베이스 -->
+            <ul class="stack-list hidden" id="db">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/mysql"><span>MySQL</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/postgresql"><span>Postgres</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/redis"><span>Redis</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch</span></li>
+            </ul>
+
+            <!-- 데브옵스 -->
+            <ul class="stack-list hidden" id="devops">
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/gitlab"><span>GitLab</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
+            </ul>
+
+            <!-- 협업툴 -->
+            <ul class="stack-list hidden" id="collab">
+                <li class="stack-item"><span>Flow</span></li>
+                <li class="stack-item"><img src="https://cdn.simpleicons.org/notion"><span>Notion</span></li>
+            </ul>
             
-            <section id="skills">
-                <h3>기술 역량</h3>
+            <!-- 서버리스 -->
+            <ul class="stack-list hidden" id="serverless">
+                <li class="stack-item"><span>Oracle Cloud Infrastructure</span></li>
+            </ul>
 
-                <!-- 카테고리 탭 -->
-                <nav class="category-nav" id="skillNav">
-                    <button class="category-btn active" data-target="all">전체</button>
-                    <button class="category-btn" data-target="lang">언어</button>
-                    <button class="category-btn" data-target="frontend">프론트엔드</button>
-                    <button class="category-btn" data-target="backend">백엔드</button>
-                    <button class="category-btn" data-target="data">데이터</button>
-                    <button class="category-btn" data-target="db">데이터베이스</button>
-                    <button class="category-btn" data-target="devops">데브옵스</button>
-                    <button class="category-btn" data-target="serverless">서버리스</button>
-                    <button class="category-btn" data-target="collab">협업툴</button>
-                    <button class="category-btn" data-target="test">테스팅 툴</button>
-                </nav>
+            <!-- 테스팅 툴 -->
+            <ul class="stack-list hidden" id="test">
+                <li class="stack-item"><span>SonarQube</span></li>
+            </ul>
+        </section>
 
-                <!-- 언어 -->
-                <ul class="stack-list" id="lang">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/go"><span>Go</span></li>
+        <br/>
+        <hr/>
+        <br/>
+
+        <section>
+            <h3>자격증</h3>
+            <p>정보처리 산업기사 (2024-12-11)</p>
+            <p>정보처리 기능사 (2023-09-20)</p>
+        </section>
+
+        <section>
+            <h3>학력</span></h3>
+            <p><a href="https://www.knou.ac.kr/knou/index.do?epTicket=LOG">방송통신대학교 </a> 
+                (컴퓨터 과학)(2025-01-23 ~ [3힉년])</p>
+            <p><a href="https://hanbom-h.goesw.kr/index.do">한봄고등학교 </a> 
+                (빅데이터 정보)(2020-01-08 ~ 2023-01-13 [졸업])</p>
+        </section>
+
+        <section>
+            <h3>경력</h3>
+            <p>
+                <a href="https://lubentis.com/">
+                    루벤티스 
+                </a>
+                (산업기능요원 현역)(AI 사업팀)(2022-12-31 ~ [재직중])</p>
+            <p>[2개월](2025-03 ~ 2025-06) Airflow 기반 인터페이스 처리 시스템 전환<br/>
+                - 기존 Interface 시스템의 처리 성능 한계 (3분당 20건) 문제를 인식하고, 
+                Apache Airflow 기반의 DAG 처리 구조로 아키텍처 전환을 제안 및 주도.<br/>
+                - 데이터 처리 흐름, 오류 monitoring 등을 DAG 단위로 설계.<br/>
+                - 2만건 이상 복잡한 인터페이스를 안정적으로 처리할 수 있도록 최적화 반복.
+                <ul class="stack-list">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript</span></li>
-                </ul>
-
-                <!-- 프론트엔드 -->
-                <ul class="stack-list hidden" id="frontend">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS</span></li>
-                </ul>
-
-                <!-- 백엔드 -->
-                <ul class="stack-list hidden" id="backend">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
-                </ul>
-
-                <!-- 데이터 -->
-                <ul class="stack-list hidden" id="data">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kibana"><span>Kibana</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/apachekafka"><span>Kafka</span></li>
-                    <li class="stack-item"><span>Zookeeper</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/pytorch"><span>PyTorch</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB</span></li>
-                </ul>
-
-                <!-- 데이터베이스 -->
-                <ul class="stack-list hidden" id="db">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/mysql"><span>MySQL</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/postgresql"><span>Postgres</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/redis"><span>Redis</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch</span></li>
-                </ul>
-
-                <!-- 데브옵스 -->
-                <ul class="stack-list hidden" id="devops">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/gitlab"><span>GitLab</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
                 </ul>
-
-                <!-- 협업툴 -->
-                <ul class="stack-list hidden" id="collab">
-                    <li class="stack-item"><span>Flow</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/notion"><span>Notion</span></li>
-                </ul>
-                
-                <!-- 서버리스 -->
-                <ul class="stack-list hidden" id="serverless">
+            </p>
+            <br/>
+            <p>[8개월](2024-06 ~ 2025-02) 클라우드 인프라 전환 지원 및 운영 자동화 기능 개발<br/>
+                - PVC 디스크 경로 조회 및 조작할 수 있는 자체 FileSystem 탐색기 구현. (Win+E 스타일 UI)<br/>
+                - PromQL을 활용한 Cluster resource monitoring 화면 개발.<br/>
+                - Oracle Cloud Infrastructure 기반 Multi-Region Cluster 환경 전환 과정에 참여하여, 네트워크 구성.
+                <ul class="stack-list">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
                     <li class="stack-item"><span>Oracle Cloud Infrastructure</span></li>
                 </ul>
-
-                <!-- 테스팅 툴 -->
-                <ul class="stack-list hidden" id="test">
-                    <li class="stack-item"><span>SonarQube</span></li>
+            </p>
+            <br/>
+            <p>[21개월](2023-07 ~ 2025-03) 중복 제거 및 유지보수 최적화를 위한 SaaS Interface 통합 시스템 구축<br/>
+                초기 개발 (8개월) + 운영 및 유지보수 (13개월)<br/>
+                - Interface 통합으로 중복 로직 제거 및 유지보수 비용 절감.<br/>
+                - SMTP, WSDL 등 6건 이상의 신규 요구 사항 기능 확장.<br/>
+                - 데이터 변환 과정에서 발생하는 특수문자 기반 오류 대응 로직 개선.
+                <ul class="stack-list">
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
+                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
                 </ul>
-            </section>
+            </p>
 
-            <section>
-                <h3>자격증</h3>
-                <p>정보처리 산업기사 (2024-12-11)</p>
-                <p>정보처리 기능사 (2023-09-20)</p>
-            </section>
+            <br/>
+            <p><a href="https://lubentis.com/">
+                테이크솔루션 
+            </a> (현장실습생)(빅데이터팀)(2022.09.01 ~ 2022.12.06)</p>
+        </section>
 
-            <section>
-                <h3>학력</span></h3>
-                <p><a href="https://www.knou.ac.kr/knou/index.do?epTicket=LOG">방송통신대학교 </a> 
-                    (컴퓨터 과학)(2025-01-23 ~ [3힉년])</p>
-                <p><a href="https://hanbom-h.goesw.kr/index.do">한봄고등학교 </a> 
-                    (빅데이터 정보)(2020-01-08 ~ 2023-01-13 [졸업])</p>
-            </section>
+        <section>
+            <h3>프로젝트 / 활동</h3>
+            <p>
+                <a href="https://medigatenews.com/news/3192488916">
+                    슬립테크 수면건강 아이디어 공모전
+                </a>
+                (나비잠팀)(2022-04-15 ~ 2022-04-17)
+            </p>
+            <p>
+                서류 통과 후 코엑스에서 아이디어를 부스에서 발표 할 수 있었고, <br/>
+                다양한 기업·팀을 보며 많이 성장할 수 있었습니다.
+            </p>
 
-            <section>
-                <h3>경력</h3>
-                <p>
-                    <a href="https://lubentis.com/">
-                        루벤티스 
-                    </a>
-                    (산업기능요원 현역)(AI 사업팀)(2022-12-31 ~ [재직중])</p>
-                <p>[2개월](2025-03 ~ 2025-06) Airflow 기반 인터페이스 처리 시스템 전환<br/>
-                    - 기존 Interface 시스템의 처리 성능 한계 (3분당 20건) 문제를 인식하고, 
-                    Apache Airflow 기반의 DAG 처리 구조로 아키텍처 전환을 제안 및 주도.<br/>
-                    - 데이터 처리 흐름, 오류 monitoring 등을 DAG 단위로 설계.<br/>
-                    - 2만건 이상 복잡한 인터페이스를 안정적으로 처리할 수 있도록 최적화 반복.
-                    <ul class="stack-list">
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
-                    </ul>
-                </p>
-                <br/>
-                <p>[8개월](2024-06 ~ 2025-02) 클라우드 인프라 전환 지원 및 운영 자동화 기능 개발<br/>
-                    - PVC 디스크 경로 조회 및 조작할 수 있는 자체 FileSystem 탐색기 구현. (Win+E 스타일 UI)<br/>
-                    - PromQL을 활용한 Cluster resource monitoring 화면 개발.<br/>
-                    - Oracle Cloud Infrastructure 기반 Multi-Region Cluster 환경 전환 과정에 참여하여, 네트워크 구성.
-                    <ul class="stack-list">
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
-                        <li class="stack-item"><span>Oracle Cloud Infrastructure</span></li>
-                    </ul>
-                </p>
-                <br/>
-                <p>[21개월](2023-07 ~ 2025-03) 중복 제거 및 유지보수 최적화를 위한 SaaS Interface 통합 시스템 구축<br/>
-                    초기 개발 (8개월) + 운영 및 유지보수 (13개월)<br/>
-                    - Interface 통합으로 중복 로직 제거 및 유지보수 비용 절감.<br/>
-                    - SMTP, WSDL 등 6건 이상의 신규 요구 사항 기능 확장.<br/>
-                    - 데이터 변환 과정에서 발생하는 특수문자 기반 오류 대응 로직 개선.
-                    <ul class="stack-list">
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
-                        <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                    </ul>
-                </p>
+            <br/>
+            <p>
+                <a href="https://meister.hrdkorea.or.kr/sub/3/2/1/20160512110924569100_view.do">
+                    지방 기능경기대회 클라우드컴퓨팅 
+                </a>
+                (2021-04-05 ~ 2021-04-09 [은상])
+            </p>
+            <p>
+                AWS 의 서비스 (Network, Compute, Storage, Database, ...) 를 활용하여 주어진 과제를 해결 하였습니다.<br/>
+                전국대회에서 실력자들을 만나 자극을 받았고, 더 열심히 할 동기를 얻었습니다.
+            </p>
 
-                <br/>
-                <p><a href="https://lubentis.com/">
-                    테이크솔루션 
-                </a> (현장실습생)(빅데이터팀)(2022.09.01 ~ 2022.12.06)</p>
-            </section>
-
-            <section>
-                <h3>프로젝트 / 활동</h3>
-                <p>
-                    <a href="https://medigatenews.com/news/3192488916">
-                        슬립테크 수면건강 아이디어 공모전
-                    </a>
-                    (나비잠팀)(2022-04-15 ~ 2022-04-17)
-                </p>
-                <p>
-                    서류 통과 후 코엑스에서 아이디어를 부스에서 발표 할 수 있었고, <br/>
-                    다양한 기업·팀을 보며 많이 성장할 수 있었습니다.
-                </p>
-
-                <br/>
-                <p>
-                    <a href="https://meister.hrdkorea.or.kr/sub/3/2/1/20160512110924569100_view.do">
-                        지방 기능경기대회 클라우드컴퓨팅 
-                    </a>
-                    (2021-04-05 ~ 2021-04-09 [은상])
-                </p>
-                <p>
-                    AWS 의 서비스 (Network, Compute, Storage, Database, ...) 를 활용하여 주어진 과제를 해결 하였습니다.<br/>
-                    전국대회에서 실력자들을 만나 자극을 받았고, 더 열심히 할 동기를 얻었습니다.
-                </p>
-
-                <br/>
-                <p>
-                    <a href="https://www.cyberguardians.or.kr/main.do;jsessionid=5BD4D43A91B37440DCD69FD60F9E45BA">
-                        사이버가디언즈 해킹캠프
-                    </a>
-                    (2018-07-27 ~ 2018-07-27)
-                </p>
-                <p>
-                    기본적인 해킹에 대한 지식을 얻을 수 있었습니다.
-                </p>
-            </section>
-        </div>
+            <br/>
+            <p>
+                <a href="https://www.cyberguardians.or.kr/main.do;jsessionid=5BD4D43A91B37440DCD69FD60F9E45BA">
+                    사이버가디언즈 해킹캠프
+                </a>
+                (2018-07-27 ~ 2018-07-27)
+            </p>
+            <p>
+                기본적인 해킹에 대한 지식을 얻을 수 있었습니다.
+            </p>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
