@@ -33,6 +33,10 @@
         </section>
 
         <section id="skills">
+            <!-- TODO: 프로젝트 서버는 일단 Ingress 는 전부 블랙 리스트 처리하고, Github 만 허용하도록.
+                       공개될 수 있는 정보만 작성하도록 하고, 매핑 하여, 경력 창에도 입력되고, 
+                       tag 의 개수를 비율로 나타내어, 어떤 언어를 가장 많이 활용하는지, 그래프로 보여주기.
+                       tag 의 개수나 프로젝트 문서는 RestFul API 로 서로 상호작용 가능하게 진행. -->
             <h3>기술 역량</h3>
 
             <!-- 카테고리 탭 -->
@@ -65,6 +69,8 @@
             <!-- 백엔드 -->
             <ul class="stack-list hidden" id="backend">
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
+                <!-- TODO: javascript 로 github djangoStudy 링크를 먼저 healthcheck 하고.
+                           status 200 일 경우, 링크로 검색자가 접근할 수 있도록 고도화. -->
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
             </ul>
 
