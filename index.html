@@ -24,11 +24,11 @@
 
         <section id="intro">
             <p>
-                인터페이스 및 데이터 워크플로우를 운영하며, 
-                <br/>
-                온프레미스와 클라우드 서버 멀티리전을 관리하고 있습니다.
-                <br/>
-                최근에는 MLOps 를 구축하고, LLM 적용을 시도하고 있습니다.
+                안녕하세요, Devops Engineer 박정원 입니다.
+            </p>
+            <p>
+                인터페이스 및 데이터 워크플로우를 운영하며, 온프레미스와 클라우드 서버 멀티리전을 관리하고 있습니다.<br/>
+                개발자는 개발에 온전히 집중할 수 있는 환경을 만들기 위해 노력 합니다.
             </p>
         </section>
 
@@ -48,17 +48,14 @@
                 <button class="category-btn" data-target="data">데이터</button>
                 <button class="category-btn" data-target="db">데이터베이스</button>
                 <button class="category-btn" data-target="devops">데브옵스</button>
-                <button class="category-btn" data-target="serverless">서버리스</button>
+                <button class="category-btn" data-target="serverless">클라우드</button>
                 <button class="category-btn" data-target="collab">협업툴</button>
-                <button class="category-btn" data-target="test">테스팅 툴</button>
             </nav>
 
             <!-- 언어 -->
             <ul class="stack-list" id="lang">
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/go"><span>Go</span></li>
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
-                <li class="stack-item"><img src="https://cdn.simpleicons.org/typescript"><span>TypeScript</span></li>
             </ul>
 
             <!-- 프론트엔드 -->
@@ -68,7 +65,6 @@
 
             <!-- 백엔드 -->
             <ul class="stack-list hidden" id="backend">
-                <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
                 <!-- TODO: javascript 로 github djangoStudy 링크를 먼저 healthcheck 하고.
                            status 200 일 경우, 링크로 검색자가 접근할 수 있도록 고도화. -->
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
@@ -108,14 +104,9 @@
                 <li class="stack-item"><img src="https://cdn.simpleicons.org/notion"><span>Notion</span></li>
             </ul>
             
-            <!-- 서버리스 -->
+            <!-- 클라우드 -->
             <ul class="stack-list hidden" id="serverless">
                 <li class="stack-item"><span>Oracle Cloud Infrastructure</span></li>
-            </ul>
-
-            <!-- 테스팅 툴 -->
-            <ul class="stack-list hidden" id="test">
-                <li class="stack-item"><span>SonarQube</span></li>
             </ul>
         </section>
 
@@ -132,7 +123,7 @@
         <section>
             <h3>학력</span></h3>
             <p><a href="https://www.knou.ac.kr/knou/index.do?epTicket=LOG">방송통신대학교 </a> 
-                (컴퓨터 과학)(2025-01-23 ~ [3학년])</p>
+                (컴퓨터 과학)(2025-01-23 ~ [4학년][휴학])</p>
             <p><a href="https://hanbom-h.goesw.kr/index.do">한봄고등학교 </a> 
                 (빅데이터 정보)(2020-01-08 ~ 2023-01-13 [졸업])</p>
         </section>
@@ -144,14 +135,11 @@
                     루벤티스 
                 </a>
                 (산업기능요원 현역)(AI 사업팀)(2022-12-31 ~ [재직중])</p>
-            <p>[2개월](2025-03 ~ 2025-06) Airflow 기반 인터페이스 처리 시스템 전환<br/>
-                - 기존 Interface 시스템의 처리 성능 한계 (3분당 20건) 문제를 인식하고, 
-                Apache Airflow 기반의 DAG 처리 구조로 아키텍처 전환을 제안 및 주도.<br/>
-                - 데이터 처리 흐름, 오류 monitoring 등을 DAG 단위로 설계.<br/>
-                - 2만건 이상 복잡한 인터페이스를 안정적으로 처리할 수 있도록 최적화 반복.
+            <p>[5개월](2025-03 ~ 2025-07) 인터페이스 통합 시스템 AirFlow 전환 및 최적화<br/>
+                - 총 188건의 작업 중 95건의 인터페이스 운영.<br/>
+                - 3분 간격 최소 10건 작업 병렬 처리.
                 <ul class="stack-list">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/django"><span>Django</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
@@ -159,10 +147,10 @@
                 </ul>
             </p>
             <br/>
-            <p>[8개월](2024-06 ~ 2025-02) 클라우드 인프라 전환 지원 및 운영 자동화 기능 개발<br/>
-                - PVC 디스크 경로 조회 및 조작할 수 있는 자체 FileSystem 탐색기 구현. (Win+E 스타일 UI)<br/>
-                - PromQL을 활용한 Cluster resource monitoring 화면 개발.<br/>
-                - Oracle Cloud Infrastructure 기반 Multi-Region Cluster 환경 전환 과정에 참여하여, 네트워크 구성.
+            <p>[8개월](2024-06 ~ 2025-02) 클라우드 이전 및 PaaS 개발 참여<br/>
+                - 월 900회 이상의 빌드/배포 파이프라인 처리(일 평균 30회).<br/>
+                - 전체 배포 과정의 83% 자동화 달성.<br/>
+                - 파이프라인 성공률 99.8% 유지.
                 <ul class="stack-list">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/javascript"><span>JavaScript</span></li>
@@ -180,11 +168,10 @@
                 </ul>
             </p>
             <br/>
-            <p>[21개월](2023-07 ~ 2025-03) 중복 제거 및 유지보수 최적화를 위한 SaaS Interface 통합 시스템 구축<br/>
+            <p>[21개월](2023-07 ~ 2025-03) 인터페이스 통합 시스템 구축<br/>
                 초기 개발 (8개월) + 운영 및 유지보수 (13개월)<br/>
-                - Interface 통합으로 중복 로직 제거 및 유지보수 비용 절감.<br/>
-                - SMTP, WSDL 등 6건 이상의 신규 요구 사항 기능 확장.<br/>
-                - 데이터 변환 과정에서 발생하는 특수문자 기반 오류 대응 로직 개선.
+                - 인터페이스 통합을 통해 중복 로직 제거 및 유지보수 비용 절감.<br/>
+                - 3분 간격 최대 20건 처리.
                 <ul class="stack-list">
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
                     <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
