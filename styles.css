@@ -37,6 +37,9 @@ h2{
 p{
   font-size:15px;
 }
+summary{
+  font-size:15px;
+}
 section{margin-bottom:10px;}
 
 /* 3. 링크 & 소셜 ------------------------------------------------------- */
