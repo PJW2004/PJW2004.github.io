@@ -22,32 +22,103 @@ document.getElementById('skillNav').addEventListener('click', e => {
   document.querySelectorAll('.stack-item').forEach(item => item.classList.remove('active'));
 });
 
-// 스킬 상세 데이터
+// 스킬 상세 데이터 (2단계 구조: 카테고리 > 항목)
 const skillDetails = {
-  'Go': [''],
-  'Python': [''],
-  'FastAPI': [''],
-  'Airflow': ['Celery Executor','Concurrency/Worker','VirtualEnvOperator'],
-  'Kibana': ['Dashboard'],
-  'Prometheus': ['PromQL','Alertmanager'],
-  'Grafana': ['Dashboard Template','Alert Rules'],
-  'Kafka': ['Kafka Connect'],
-  'VectorDB': [''],
-  'MariaDB': [''],
-  'Postgres': [''],
-  'Redis': [''],
-  'ElasticSearch': [''],
-  'GitLab': ['GitLab CI','GitLab Runner'],
-  'Docker': ['Dockerfile','Docker Compose'],
-  'Kubernetes': ['kubectl','api-resource'],
-  'Helm': ['Helm Template','Helm Hooks'],
-  'Flow': [''],
-  'Notion': [''],
-  'Oracle Cloud Infrastructure': ['Instances','Block Storage(Block Volume, Boot Volume)','File Storage',
-    'Virtual cloud networks','Load balancers','DNS management(Public zones)','IP management(Reserved public IPs)','Network Command Center(Network Path Analyzer)',
-    'Containers & Artifacts','Logging'],
-  'Claude': ['Agent Skills','Slash Command','Hooks','Sub Agent','Model Context Protocol','Plugins','Checkpoint',]
+  'Go': null,
+  'Python': null,
+  'FastAPI': null,
+  'Airflow': {
+    'Task Execution': ['Celery Executor', 'Concurrency/Worker'],
+    'Operators': ['VirtualEnvOperator']
+  },
+  'Kibana': {
+    'Visualization': ['Dashboard']
+  },
+  'Prometheus': {
+    'Query': ['PromQL'],
+    'Alerting': ['Alertmanager']
+  },
+  'Grafana': {
+    'Visualization': ['Dashboard Template'],
+    'Alerting': ['Alert Rules']
+  },
+  'Kafka': {
+    'Integration': ['Kafka Connect']
+  },
+  'VectorDB': null,
+  'MariaDB': null,
+  'Postgres': null,
+  'Redis': null,
+  'ElasticSearch': null,
+  'GitLab': {
+    'CI/CD': ['GitLab CI', 'GitLab Runner']
+  },
+  'Docker': {
+    'Configuration': ['Dockerfile', 'Docker Compose']
+  },
+  'Kubernetes': {
+    'CLI': ['kubectl'],
+    'Resources': ['api-resource']
+  },
+  'Helm': {
+    'Templating': ['Helm Template', 'Helm Hooks']
+  },
+  'Flow': null,
+  'Notion': null,
+  'Oracle Cloud Infrastructure': {
+    'Compute': ['Instances'],
+    'Storage': ['Block Storage(Block Volume, Boot Volume)', 'File Storage'],
+    'Networking': ['Virtual cloud networks', 'Load balancers', 'DNS management(Public zones)', 'IP management(Reserved public IPs)', 'Network Command Center(Network Path Analyzer)'],
+    'Developer Services': ['Containers & Artifacts'],
+    'Observability & Management': ['Logging']
+  },
+  'Claude': {
+    'Core Features': ['Agent Skills', 'Slash Command', 'Hooks'],
+    'Advanced': ['Sub Agent', 'Model Context Protocol'],
+    'Extensions': ['Plugins', 'Checkpoint']
+  }
 };
+
+// 2단계 구조 렌더링 함수
+function renderSkillDetails(details) {
+  if (!details || typeof details !== 'object') return '';
+
+  let html = '';
+  for (const [category, items] of Object.entries(details)) {
+    html += `
+      <li class="skill-category" data-expanded="false">
+        <span class="category-toggle">▸</span>
+        <span class="category-name">${category}</span>
+        <ul class="skill-items hidden">
+          ${items.map(item => `<li class="skill-item">${item}</li>`).join('')}
+        </ul>
+      </li>
+    `;
+  }
+  return html;
+}
+
+// 카테고리 토글 이벤트 핸들러
+function setupCategoryToggle() {
+  document.querySelectorAll('.skill-category').forEach(cat => {
+    cat.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = cat.dataset.expanded === 'true';
+      const toggle = cat.querySelector('.category-toggle');
+      const items = cat.querySelector('.skill-items');
+
+      if (isExpanded) {
+        cat.dataset.expanded = 'false';
+        toggle.textContent = '▸';
+        items.classList.add('hidden');
+      } else {
+        cat.dataset.expanded = 'true';
+        toggle.textContent = '▾';
+        items.classList.remove('hidden');
+      }
+    });
+  });
+}
 
 // 스킬 아이템 클릭 이벤트
 document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
@@ -74,7 +145,10 @@ document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
     document.getElementById('terminal-title').textContent = `${skillName} - details`;
 
     const outputEl = document.getElementById('skill-details');
-    outputEl.innerHTML = details.map(d => `<li>${d}</li>`).join('');
+    outputEl.innerHTML = renderSkillDetails(details);
+
+    // 토글 이벤트 설정
+    setupCategoryToggle();
 
     detailSection.classList.remove('hidden');
   });
