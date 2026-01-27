@@ -16,6 +16,10 @@ body{
   color:var(--text);
   background:#fff;
   padding:0 1rem;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 
 /* 2. 레이아웃 ---------------------------------------------------------- */
