@@ -79,3 +79,79 @@ a:hover{color:var(--link-hover);}
 }
 .stack-list img{width:20px;height:20px;}
 .hidden{display:none;}
+
+/* 6. 터미널 스타일 (스킬 상세) ------------------------------------------ */
+.terminal{
+  margin-top:1.5rem;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  font-family:'Consolas','Monaco','Courier New',monospace;
+  font-size:.85rem;
+}
+.terminal-header{
+  background:#3c3c3c;
+  padding:.5rem .75rem;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+.terminal-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
+.terminal-dot.red{background:#ff5f56;}
+.terminal-dot.yellow{background:#ffbd2e;}
+.terminal-dot.green{background:#27ca40;}
+.terminal-title{
+  color:#ccc;
+  font-size:.75rem;
+  margin-left:auto;
+  margin-right:auto;
+}
+.terminal-body{
+  background:#1e1e1e;
+  padding:1rem;
+  color:#d4d4d4;
+  min-height:80px;
+}
+.terminal-line{
+  margin-bottom:.5rem;
+}
+.prompt{
+  color:#27ca40;
+  margin-right:.5rem;
+}
+.command{
+  color:#569cd6;
+}
+.terminal-output{
+  list-style:none;
+  padding-left:1.2rem;
+}
+.terminal-output li{
+  color:#d4d4d4;
+  padding:.10rem 0;
+  border-left:2px solid #555;
+  padding-left:.75rem;
+  margin-bottom:.10rem;
+}
+.terminal-output li::before{
+  content:"▸ ";
+  color:#27ca40;
+}
+.stack-item{
+  cursor:pointer;
+  transition:transform .15s, opacity .15s;
+}
+.stack-item:hover{
+  transform:translateY(-2px);
+  opacity:.8;
+}
+.stack-item.active{
+  background:#f0f0f0;
+  border-radius:4px;
+  padding:2px 6px;
+  margin:-2px -6px;
+}

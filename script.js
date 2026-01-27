@@ -16,6 +16,65 @@ document.getElementById('skillNav').addEventListener('click', e => {
     // show only the chosen category
     lists.forEach(list => list.classList.toggle('hidden', list.id !== id));
   }
+
+  // 3. hide skill detail when category changes
+  document.getElementById('skills-detail').classList.add('hidden');
+  document.querySelectorAll('.stack-item').forEach(item => item.classList.remove('active'));
+});
+
+// 스킬 상세 데이터
+const skillDetails = {
+  'Go': [''],
+  'Python': [''],
+  'FastAPI': [''],
+  'Airflow': ['Celery Executor','Concurrency/Worker','VirtualEnvOperator'],
+  'Kibana': ['Dashboard'],
+  'Prometheus': ['PromQL','Alertmanager'],
+  'Grafana': ['Dashboard Template','Alert Rules'],
+  'Kafka': ['Kafka Connect'],
+  'VectorDB': [''],
+  'MySQL': [''],
+  'Postgres': [''],
+  'Redis': [''],
+  'ElasticSearch': [''],
+  'GitLab': ['GitLab CI','GitLab Runner'],
+  'Docker': ['Dockerfile','Docker Compose'],
+  'Kubernetes': ['kubectl','api-resource'],
+  'Helm': ['Helm Template','Helm Hooks'],
+  'Flow': [''],
+  'Notion': [''],
+  'Oracle Cloud Infrastructure': ['']
+};
+
+// 스킬 아이템 클릭 이벤트
+document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const skillName = item.querySelector('span').textContent;
+    const details = skillDetails[skillName];
+
+    if (!details) return;
+
+    // active 상태 토글
+    const wasActive = item.classList.contains('active');
+    document.querySelectorAll('.stack-item').forEach(i => i.classList.remove('active'));
+
+    const detailSection = document.getElementById('skills-detail');
+    if (wasActive) {
+      detailSection.classList.add('hidden');
+      return;
+    }
+
+    item.classList.add('active');
+
+    // 터미널에 내용 표시
+    document.getElementById('skill-name').textContent = skillName.toLowerCase().replace(/\s+/g, '-');
+    document.getElementById('terminal-title').textContent = `${skillName} - details`;
+
+    const outputEl = document.getElementById('skill-details');
+    outputEl.innerHTML = details.map(d => `<li>${d}</li>`).join('');
+
+    detailSection.classList.remove('hidden');
+  });
 });
 
 // 병역 남은일자 및 잔여일자 계산
