@@ -33,7 +33,7 @@ const skillDetails = {
   'Grafana': ['Dashboard Template','Alert Rules'],
   'Kafka': ['Kafka Connect'],
   'VectorDB': [''],
-  'MySQL': [''],
+  'MariaDB': [''],
   'Postgres': [''],
   'Redis': [''],
   'ElasticSearch': [''],
