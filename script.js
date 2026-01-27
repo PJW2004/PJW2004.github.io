@@ -43,7 +43,10 @@ const skillDetails = {
   'Helm': ['Helm Template','Helm Hooks'],
   'Flow': [''],
   'Notion': [''],
-  'Oracle Cloud Infrastructure': ['']
+  'Oracle Cloud Infrastructure': ['Instances','Block Storage(Block Volume, Boot Volume)','File Storage',
+    'Virtual cloud networks','Load balancers','DNS management(Public zones)','IP management(Reserved public IPs)','Network Command Center(Network Path Analyzer)',
+    'Containers & Artifacts','Logging'],
+  'Claude': ['Agent Skills','Slash Command','Hooks','Sub Agent','Model Context Protocol','Plugins','Checkpoint',]
 };
 
 // 스킬 아이템 클릭 이벤트
