@@ -40,17 +40,118 @@ h2{
 }
 p{
   font-size:15px;
+  line-height:1.7;
 }
-summary{
-  font-size:15px;
-}
-section{margin-bottom:10px;}
+section{margin-bottom:2rem;}
 
 /* 3. 링크 & 소셜 ------------------------------------------------------- */
 a{color:var(--link);text-decoration:none;}
 a:hover{color:var(--link-hover);}
 .social{display:flex;gap:1.1rem;font-size:0.95rem;margin-top:.5rem;}
 .social a:hover{text-decoration:underline;}
+
+/* — h3 섹션 제목 -------------------------------------------------------- */
+h3{
+  font-family:var(--font-head);
+  font-size:1.25rem;
+  margin-bottom:.8rem;
+  padding-bottom:.35rem;
+  border-bottom:1.5px solid #e0e0e0;
+}
+
+/* — 경력 회사 블록 (callout) --------------------------------------------- */
+.career-block{
+  background:#fafafa;
+  border:1px solid #e8e8e8;
+  border-radius:8px;
+  padding:1rem 1.2rem;
+  margin-bottom:.8rem;
+}
+.career-header{
+  font-weight:600;
+  margin-bottom:.4rem;
+  display:flex;
+  align-items:baseline;
+  gap:.4rem;
+  flex-wrap:wrap;
+}
+.career-header time{
+  font-weight:400;
+  font-size:.8rem;
+  color:var(--muted);
+  margin-left:auto;
+  white-space:nowrap;
+}
+.career-header a{
+  font-size:16px;
+}
+.career-projects{
+  margin-top:.6rem;
+}
+
+/* — details / summary (경력 프로젝트) ----------------------------------- */
+details{
+  margin-bottom:.5rem;
+  border-left:2.5px solid #d0d0d0;
+  padding-left:.9rem;
+  transition:border-color .2s;
+}
+details[open]{
+  border-left-color:var(--link);
+}
+details summary{
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  padding:.45rem 0;
+  list-style:none;
+  display:flex;
+  align-items:baseline;
+  gap:.5rem;
+}
+details summary::-webkit-details-marker{display:none;}
+details summary::before{
+  content:"";
+  display:inline-block;
+  width:6px;height:6px;
+  border-right:1.5px solid var(--muted);
+  border-bottom:1.5px solid var(--muted);
+  transform:rotate(-45deg);
+  transition:transform .2s;
+  flex-shrink:0;
+  margin-top:2px;
+}
+details[open] summary::before{
+  transform:rotate(45deg);
+}
+details summary time{
+  font-weight:400;
+  font-size:.8rem;
+  color:var(--muted);
+  margin-left:auto;
+  white-space:nowrap;
+}
+details summary .role{
+  font-weight:400;
+  font-size:.7rem;
+  color:var(--link);
+  background:#eef4fb;
+  border:1px solid #d0dfef;
+  border-radius:999px;
+  padding:.1rem .5rem;
+  white-space:nowrap;
+}
+details p{
+  color:#333;
+  font-size:14px;
+  padding:.25rem 0 .6rem;
+}
+
+/* — 프로젝트/활동 항목 -------------------------------------------------- */
+.activity-item{
+  margin-top:1rem;
+  padding-top:.6rem;
+}
 
 /* 4. 카테고리 탭 (최소 디자인) ---------------------------------------- */
 .category-nav{display:flex;gap:.6rem;overflow-x:auto;margin:1.2rem 0;}
