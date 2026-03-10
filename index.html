@@ -151,52 +151,43 @@
                 <a href="https://lubentis.com/">
                     루벤티스 
                 </a>
-                (AI 사업팀)(2022-12-05 ~ [재직중])</p>
+                (물류사업부 AI 사업팀)(2022-12-05 ~ 2026-02-12)</p>
             <details>
-                <summary>[5개월](2025-03 ~ 2025-07) Airflow 기반 데이터 파이프라인 아키텍처 최적화</summary>
+                <summary>멀티리전 인프라 마이그레이션 및 운영 (2024.06 - 2026.02)</summary>
                 <p>
-                    Airflow 및 Celery 튜닝으로 비동기 처리를 구현하고, <br/>
-                    HashiCorp Vault & MinIO 연동으로 보안과 파이프라인 성능을 최적화했습니다.
-                </p>
-                <ul class="stack-list">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/apacheairflow"><span>Airflow</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
-                </ul><br/>
+                    기존 클라우드 플랫폼의 리전 제한 및 운영 제약을 해소하기 위해 신규 클라우드 플랫폼으로의 마이그레이션을 주도하였습니다.<br/>
+                    서울 및 싱가포르 2개 리전에 걸쳐 서버 27대, 서브넷 11개 규모의 멀티리전 인프라를 직접 설계 및 구축하였으며,
+                    이를 통해 해외 고객사 지원이 가능해졌습니다.<br/>
+                    이후 약 7개월간 14건의 운영 이슈를 직접 진단하고 해결하며 서비스 안정성을 유지하였고,
+                    최종적으로 총 5곳의 고객사에 서비스를 안정적으로 운영하였습니다.<br/>
+                </p><br/>
             </details>
             <details>
-                <summary>[8개월](2024-06 ~ 2025-02) OCI 기반 멀티 리전 인프라 구축 및 사내 PaaS(IDP) 플랫폼 개발</summary>
+                <summary>내부 개발자 플랫폼(IDP) 개발 (2024.06 - 2025.02)</summary>
                 <p>
-                    OCI 기반 멀티 리전 K8s 및 자체 PaaS를 개발하고, <br/>
-                    CI/CD 83% 자동화와 리소스 모니터링으로 운영 효율을 높였습니다.
-                </p>
-                <ul class="stack-list">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/vue.js"><span>Vue JS</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/prometheus"><span>Prometheus</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/grafana"><span>Grafana</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/sqlite"><span>VectorDB</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/elasticsearch"><span>ElasticSearch</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/kubernetes"><span>Kubernetes</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/helm"><span>Helm</span></li>
-                    <li class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"><span>Oracle Cloud Infrastructure</span></li>
-                </ul><br/>
+                    기존 상용 배포 플랫폼의 구조적 병목 및 라이선스 비용 문제를 해소하기 위해 자체 IDP 개발 프로젝트에 참여하였습니다.<br/>
+                    클러스터 리소스 상태를 IDP 내에서 직접 조회할 수 있는 모니터링 기능과,
+                    웹 UI 기반의 파일 스토리지 관리 기능을 담당하여 개발하였습니다.<br/>
+                    해당 플랫폼은 배포 자동화율 83%, 월 900회 배포를 처리하며 4곳의 고객사에서 1년 이상 운영되고 있습니다.<br/>
+                </p><br/>
             </details>
             <details>
-                <summary>[8개월](2023-07 ~ 2024-02) FastAPI 기반 SaaS 연동 표준화 및 인터페이스 게이트웨이 구축</summary>
+                <summary>사내 외부 연동 플랫폼(ETL) 설계 및 개발 (2023.07 - 2024.02)</summary>
                 <p>
-                    FastAPI 기반 모듈형 아키텍처로 중복 코드를 제거하고, <br/>
-                    공통 기능 모듈화 및 예외 처리 고도화로 유지보수성을 강화했습니다.
+                    프로젝트마다 반복 구현되던 외부 시스템 연동을 표준화하기 위해 자체 ETL 플랫폼을 설계 및 개발하였습니다.<br/>
+                    공통 파이프라인 구조와 템플릿 엔진을 설계하여 총 10개의 외부 시스템 연동을 완료하였으며,
+                    신규 프로젝트 초기 세팅 기간을 약 50% 단축하였습니다.<br/>
+                    이후 운영 과정에서 확인된 구조적 한계가 다음 전환 프로젝트의 직접적 근거가 되었습니다.<br/>
+                </p><br/>
+            </details>
+            <details>
+                <summary>사내 외부 연동 플랫폼(ETL) 전환 및 고도화 (2025.02 - 2025.07)</summary>
+                <p>
+                    기존 ETL의 직렬 처리 한계, 수동 장애 대응, 보안 이슈를 해소하기 위해 워크플로우 오케스트레이션 도구로의 전환을 주도하였습니다.<br/>
+                    도구 비교 분석부터 실측 기반의 성능 튜닝, 분산 처리 구조 설계, 보안 강화까지 전 과정을 담당하였습니다.<br/>
+                    전환 이후 처리 방식을 순차에서 10건 이상 병렬 처리로 개선하였으며,
+                    3개 고객사 기준 총 186개의 워크플로우를 구성하고 53개를 실 운영에 투입하였습니다.<br/>
                 </p>
-                <ul class="stack-list">
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/python"><span>Python</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/fastapi"><span>FastAPI</span></li>
-                    <li class="stack-item"><img src="https://cdn.simpleicons.org/docker"><span>Docker</span></li>
-                </ul>
             </details>
 
             <br/>
