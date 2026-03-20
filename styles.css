@@ -159,7 +159,7 @@ details p{
 }
 
 /* 4. 카테고리 탭 (최소 디자인) ---------------------------------------- */
-.category-nav{display:flex;gap:.6rem;overflow-x:auto;margin:1.2rem 0;}
+.category-nav{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0;}
 .category-btn{
   background:none;
   border:1px solid #d0d0d0;
