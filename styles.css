@@ -240,7 +240,7 @@ details p{
   user-select:none;
 }
 .command{
-  color:#82aaff;
+  color:#5af78e;
 }
 .terminal-output{
   list-style:none;
@@ -299,7 +299,7 @@ details p{
   transition:transform .15s;
 }
 .category-name{
-  color:#82aaff;
+  color:#69d2a0;
   font-weight:600;
   letter-spacing:.3px;
 }
