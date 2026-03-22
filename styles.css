@@ -193,63 +193,72 @@ details p{
 /* 6. 터미널 스타일 (스킬 상세) ------------------------------------------ */
 .terminal{
   margin-top:1.5rem;
-  border-radius:8px;
+  border:1px solid #333;
+  border-radius:6px;
   overflow:hidden;
-  box-shadow:0 4px 12px rgba(0,0,0,0.15);
-  font-family:'Consolas','Monaco','Courier New',monospace;
-  font-size:.85rem;
+  font-family:'JetBrains Mono','Fira Code','Consolas','Monaco','Courier New',monospace;
+  font-size:.72rem;
+  line-height:1.55;
 }
 .terminal-header{
-  background:#3c3c3c;
-  padding:.5rem .75rem;
+  background:#2d2d2d;
+  padding:.4rem .75rem;
   display:flex;
   align-items:center;
-  gap:.5rem;
+  gap:.45rem;
+  border-bottom:1px solid #333;
 }
 .terminal-dot{
-  width:12px;
-  height:12px;
+  width:10px;
+  height:10px;
   border-radius:50%;
 }
 .terminal-dot.red{background:#ff5f56;}
 .terminal-dot.yellow{background:#ffbd2e;}
 .terminal-dot.green{background:#27ca40;}
 .terminal-title{
-  color:#ccc;
-  font-size:.75rem;
+  color:#888;
+  font-size:.7rem;
   margin-left:auto;
   margin-right:auto;
+  letter-spacing:.5px;
 }
 .terminal-body{
-  background:#1e1e1e;
-  padding:1rem;
-  color:#d4d4d4;
+  background:#1a1a1a;
+  padding:1rem 1.2rem;
+  color:#c8c8c8;
   min-height:80px;
 }
 .terminal-line{
-  margin-bottom:.5rem;
+  margin-bottom:.6rem;
+  display:flex;
+  align-items:center;
 }
 .prompt{
-  color:#27ca40;
-  margin-right:.5rem;
+  color:#5af78e;
+  margin-right:.4rem;
+  user-select:none;
 }
 .command{
-  color:#569cd6;
+  color:#82aaff;
 }
 .terminal-output{
   list-style:none;
-  padding-left:1.2rem;
 }
 .terminal-output li{
-  color:#d4d4d4;
-  padding:.10rem 0;
-  border-left:2px solid #555;
-  padding-left:.75rem;
-  margin-bottom:.10rem;
+  color:#c8c8c8;
+  padding:.2rem 0;
+  padding-left:.9rem;
+  margin-bottom:.05rem;
+  border-left:none;
+  position:relative;
 }
 .terminal-output li::before{
-  content:"▸ ";
-  color:#27ca40;
+  content:"›";
+  color:#5af78e;
+  position:absolute;
+  left:0;
+  font-weight:700;
 }
 .stack-item{
   cursor:pointer;
@@ -272,42 +281,47 @@ details p{
 }
 .skill-category{
   cursor:pointer;
-  padding:.25rem 0;
-  border-left:2px solid #555;
-  padding-left:.75rem;
-  margin-bottom:.25rem;
+  padding:.3rem 0;
+  padding-left:.9rem;
+  margin-bottom:.15rem;
   list-style:none;
+  border-radius:3px;
+  position:relative;
 }
 .skill-category:hover{
-  background:rgba(255,255,255,0.05);
+  background:rgba(255,255,255,0.04);
 }
 .category-toggle{
-  color:#27ca40;
-  margin-right:.5rem;
+  color:#5af78e;
   display:inline-block;
-  width:1rem;
+  width:.4rem;
+  font-size:.75rem;
   transition:transform .15s;
 }
 .category-name{
-  color:#569cd6;
+  color:#82aaff;
   font-weight:600;
+  letter-spacing:.3px;
 }
 .skill-items{
   list-style:none;
-  padding-left:1.5rem;
-  margin-top:.35rem;
+  padding-left:1.8rem;
+  margin-top:.2rem;
 }
 .skill-items.hidden{
   display:none;
 }
 .skill-item{
-  color:#d4d4d4;
-  padding:.15rem 0;
-  border-left:2px solid #3c3c3c;
-  padding-left:.75rem;
-  margin-bottom:.1rem;
+  color:#aaa;
+  padding:.12rem 0;
+  padding-left:.9rem;
+  margin-bottom:.05rem;
+  position:relative;
 }
 .skill-item::before{
-  content:"- ";
-  color:#888;
+  content:"─";
+  color:#555;
+  position:absolute;
+  left:0;
+  font-size:.7rem;
 }

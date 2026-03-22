@@ -141,7 +141,6 @@ document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
     item.classList.add('active');
 
     // 터미널에 내용 표시
-    document.getElementById('skill-name').textContent = skillName.toLowerCase().replace(/\s+/g, '-');
     document.getElementById('terminal-title').textContent = `${skillName} - details`;
 
     const outputEl = document.getElementById('skill-details');
