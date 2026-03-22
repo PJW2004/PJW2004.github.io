@@ -1,7 +1,7 @@
 /* 1. 기본 타이포 & 컬러 ------------------------------------------------ */
 :root{
-  --font-body:'Inter',system-ui,sans-serif;
-  --font-head:'EB Garamond',serif;
+  --font-body:'IBM Plex Sans KR',system-ui,sans-serif;
+  --font-head:'IBM Plex Sans KR',system-ui,sans-serif;
   --text:#111;
   --link:#0645ad;           /* 기본 파란 링크 */
   --link-hover:#000;
