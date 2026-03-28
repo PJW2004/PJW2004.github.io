@@ -14,10 +14,13 @@
 <body>
     <main>
         <header>
-        <h1>박정원
-            <!-- 영어는 따로 만들어야 겠다. -->
-            <!-- <span class="en">(Jungwon Park)</span> -->
-        </h1>
+        <div class="header-row">
+            <h1><span id="name-kr">박정원</span><span id="name-en" class="hidden">Jungwon Park</span></h1>
+            <button id="lang-toggle" class="lang-toggle" aria-label="언어 전환">
+                <span class="lang-option active">KR</span>
+                <span class="lang-option">EN</span>
+            </button>
+        </div>
         <nav class="social">
             <a href="https://github.com/PJW2004">GitHub</a>
             <a href="https://www.linkedin.com/in/jungwon-park-36a11a269/">LinkedIn</a>

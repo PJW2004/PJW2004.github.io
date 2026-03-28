@@ -153,6 +153,22 @@ document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
   });
 });
 
+// 언어 토글 (KR / EN)
+(function() {
+  const toggle = document.getElementById('lang-toggle');
+  const nameKr = document.getElementById('name-kr');
+  const nameEn = document.getElementById('name-en');
+  const options = toggle.querySelectorAll('.lang-option');
+
+  toggle.addEventListener('click', () => {
+    const isKr = !nameKr.classList.contains('hidden');
+    nameKr.classList.toggle('hidden', isKr);
+    nameEn.classList.toggle('hidden', !isKr);
+    options[0].classList.toggle('active', !isKr); // KR
+    options[1].classList.toggle('active', isKr);  // EN
+  });
+})();
+
 // 병역 남은일자 및 잔여일자 계산
 (function() {
   const startDate = new Date('2024-02-06'); // 편입일자

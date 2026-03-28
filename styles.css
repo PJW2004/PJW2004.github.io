@@ -33,6 +33,35 @@ h1{
 }
 h1 .en{font-family:var(--font-body);font-weight:400;}
 
+/* 언어 토글 버튼 */
+.header-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.lang-toggle{
+  display:flex;
+  align-items:center;
+  border:1px solid #d0d0d0;
+  border-radius:4px;
+  overflow:hidden;
+  background:none;
+  cursor:pointer;
+  padding:0;
+  flex-shrink:0;
+}
+.lang-option{
+  padding:.25rem .5rem;
+  font-size:.75rem;
+  font-family:var(--font-body);
+  color:var(--muted);
+  transition:background .18s,color .18s;
+}
+.lang-option.active{
+  background:#111;
+  color:#fff;
+}
+
 h2{
   font-family:var(--font-head);
   font-size:1.5rem;
