@@ -159,13 +159,40 @@ document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
   const nameKr = document.getElementById('name-kr');
   const nameEn = document.getElementById('name-en');
   const options = toggle.querySelectorAll('.lang-option');
+  let currentLang = 'kr';
 
   toggle.addEventListener('click', () => {
-    const isKr = !nameKr.classList.contains('hidden');
-    nameKr.classList.toggle('hidden', isKr);
-    nameEn.classList.toggle('hidden', !isKr);
-    options[0].classList.toggle('active', !isKr); // KR
-    options[1].classList.toggle('active', isKr);  // EN
+    currentLang = currentLang === 'kr' ? 'en' : 'kr';
+
+    // 이름 전환
+    nameKr.classList.toggle('hidden', currentLang === 'en');
+    nameEn.classList.toggle('hidden', currentLang === 'kr');
+
+    // 버튼 활성 상태
+    options[0].classList.toggle('active', currentLang === 'kr');
+    options[1].classList.toggle('active', currentLang === 'en');
+
+    // data-kr / data-en 속성이 있는 모든 요소 전환
+    document.querySelectorAll('[data-kr][data-en]').forEach(el => {
+      const text = el.getAttribute('data-' + currentLang);
+      const hasHtml = text.includes('<');
+
+      // summary, career-header 등 내부에 time, .role 이 있는 경우 보존
+      const time = el.querySelector('time');
+      const role = el.querySelector('.role');
+      if (time || role) {
+        const timeHtml = time ? ' ' + time.outerHTML : '';
+        const roleHtml = role ? ' ' + role.outerHTML : '';
+        el.innerHTML = text + timeHtml + roleHtml;
+      } else if (hasHtml) {
+        el.innerHTML = text;
+      } else {
+        el.textContent = text;
+      }
+    });
+
+    // html lang 속성 변경
+    document.documentElement.lang = currentLang === 'kr' ? 'ko' : 'en';
   });
 })();
 
