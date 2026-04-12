@@ -107,7 +107,7 @@ h3{
   display:flex;
   align-items:center;
   gap:.4rem;
-  flex-wrap:wrap;
+  flex-wrap:wrap-reverse;
 }
 .career-header time{
   font-weight:400;
