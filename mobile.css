@@ -77,10 +77,9 @@
     width: 100%;
     order: 3;
   }
-  details summary .role {
+  details .role {
     font-size: .65rem;
     padding: .05rem .4rem;
-    order: 2;
   }
   details p {
     font-size: 13px;
