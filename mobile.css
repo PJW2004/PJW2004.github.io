@@ -55,6 +55,11 @@
   .career-header a {
     font-size: 14px;
   }
+  .career-description {
+    padding: .5rem .7rem;
+    font-size: 13px;
+    line-height: 1.65;
+  }
 
   /* 자격증 블록 */
   #cert .career-block {

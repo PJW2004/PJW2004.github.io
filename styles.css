@@ -122,6 +122,16 @@ h3{
 .career-projects{
   margin-top:.6rem;
 }
+.career-description{
+  margin-top:.5rem;
+  padding:.6rem .9rem;
+  background:#f5f7fa;
+  border-left:3px solid var(--link);
+  border-radius:0 6px 6px 0;
+  color:#333;
+  font-size:14px;
+  line-height:1.75;
+}
 
 /* — details / summary (경력 프로젝트) ----------------------------------- */
 details{
