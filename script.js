@@ -171,11 +171,26 @@ const translations = {
       That period was not just when I learned technology; it was also when I learned how to study and how to communicate with people.
       <br/><br/>
       After joining my first company, I learned how to work and how to take responsibility. After experiencing my first resignation, I learned how to reflect on myself, how to set goals, and how to ask someone for help.
-      <br/><br/>
-      Honestly, my starting point was "hacking looks cool," so for a long time I carried a lone-wolf mindset, believing I had to figure things out and succeed all on my own. <br/>
-      But now, when I see someone who is truly skilled, the first thing I think about is how much effort they must have accumulated over time. <br/>
-      I have also come to realize that the standard of "giving one's best" differs from person to person, and I am now searching for the way of doing my best that fits me.
     `,
+    // 'intro.description': `
+    //   My curiosity started in the 5th grade of elementary school. <br/>
+    //   The first spark was a playful thought, "how could I use a hack?", while playing Clash of Clans and Clash Royale. Around the same time, I started attending "Easy Robot Academy," where I controlled robots using C, and that's where my relationship with coding truly began.
+    //   <br/><br/>
+    //   In middle school, I continued with block coding through Scratch and Entry, then first encountered Kali Linux via the security YouTube channel "Kerberos" and studied hacking by solving problems on webhacking sites.<br/>
+    //   Through a friend's introduction, I got the chance to join a cybersecurity education program, where I came face to face with the reality that my peers held knowledge far deeper than mine. <br/>
+    //   Since I wasn't particularly outstanding academically, I chose to attend a specialized vocational high school.
+    //   <br/><br/>
+    //   After entering vocational high school, I focused on raising both my grades and my programming skills together.<br/>
+    //   I took on the role of club president to gain organizational leadership experience, ranked first in the entire school in one subject, and consistently participated in conferences and competitions, earning awards along the way. <br/>
+    //   However, when I moved beyond regional competitions to the national stage, I once again ran head-on into the same wall I had felt during the middle school education program. <br/>
+    //   That period was not just when I learned technology; it was also when I learned how to study and how to communicate with people.
+    //   <br/><br/>
+    //   After joining my first company, I learned how to work and how to take responsibility. After experiencing my first resignation, I learned how to reflect on myself, how to set goals, and how to ask someone for help.
+    //   <br/><br/>
+    //   Honestly, my starting point was "hacking looks cool," so for a long time I carried a lone-wolf mindset, believing I had to figure things out and succeed all on my own. <br/>
+    //   But now, when I see someone who is truly skilled, the first thing I think about is how much effort they must have accumulated over time. <br/>
+    //   I have also come to realize that the standard of "giving one's best" differs from person to person, and I am now searching for the way of doing my best that fits me.
+    // `,
 
     'skills.title': 'Skills',
     'skills.cat.ai': 'AI',
