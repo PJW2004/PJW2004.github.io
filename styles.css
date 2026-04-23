@@ -133,6 +133,45 @@ h3{
   line-height:1.75;
 }
 
+/* intro 더 보기 / 간략히 -------------------------------------------- */
+details.intro-more{
+  margin-top:.4rem;
+  margin-bottom:0;
+  border-left:none;
+  padding-left:0;
+}
+details.intro-more > summary,
+.intro-collapse{
+  display:inline-block;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:400;
+  color:var(--muted);
+  cursor:pointer;
+  padding:.2rem .5rem;
+  border-radius:4px;
+  list-style:none;
+  transition:color .2s, background-color .2s;
+}
+details.intro-more > summary::-webkit-details-marker{display:none;}
+details.intro-more > summary::before{display:none;}
+details.intro-more > summary:hover,
+.intro-collapse:hover{
+  color:var(--link);
+  background:#eef4fb;
+}
+details.intro-more[open] > summary{
+  display:none;
+}
+details.intro-more > p{
+  margin-top:.4rem;
+}
+.intro-collapse{
+  margin-top:.4rem;
+  border:none;
+  background:transparent;
+}
+
 /* details / summary (경력 프로젝트) ----------------------------------- */
 details{
   margin-bottom:.5rem;
@@ -193,7 +232,7 @@ details p.role-line{
 }
 details p{
   color:#333;
-  font-size:14px;
+  font-size:15px;
   padding:.25rem 0 .6rem;
 }
 

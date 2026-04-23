@@ -157,6 +157,11 @@ document.querySelectorAll('#skills .stack-list .stack-item').forEach(item => {
 const translations = {
   en: {
     'intro.title': 'About Me',
+    'intro.summary': `
+      Currently serving as an Industrial Technical Personnel (active duty), I am an engineer who has solved real-world problems in both infrastructure and backend by picking up technologies quickly and digging into them all the way down.
+    `,
+    'intro.more': 'Read more',
+    'intro.less': 'Show less',
     'intro.description': `
       My curiosity started in the 5th grade of elementary school. <br/>
       The first spark was a playful thought, "how could I use a hack?", while playing Clash of Clans and Clash Royale. Around the same time, I started attending "Easy Robot Academy," where I controlled robots using C, and that's where my relationship with coding truly began.
@@ -322,6 +327,17 @@ const translations = {
     applyLang(currentLang);
 
     document.documentElement.lang = currentLang === 'kr' ? 'ko' : 'en';
+  });
+})();
+
+// 자기소개 "간략히" 버튼으로 details 닫기
+(function() {
+  const collapseBtn = document.querySelector('.intro-more .intro-collapse');
+  if (!collapseBtn) return;
+  const details = collapseBtn.closest('details');
+  collapseBtn.addEventListener('click', () => {
+    details.open = false;
+    details.querySelector('summary').focus();
   });
 })();
 
