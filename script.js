@@ -225,6 +225,10 @@ const translations = {
 
     'experience.title': 'Experience',
     'experience.roleLabel': 'Role :',
+    'experience.wemeet.name': 'Wemeet Mobility',
+    'experience.wemeet.employment': 'Employment : Probation',
+    'experience.wemeet.department': 'Department : R&D Division - Roouty Team',
+    'experience.wemeet.role': 'Role : Software Engineer, Infra',
     'experience.lubentis.name': 'Lubentis',
     'experience.lubentis.employment': 'Employment : Full-time',
     'experience.lubentis.department': 'Department : Logistics Division - AI Team',
